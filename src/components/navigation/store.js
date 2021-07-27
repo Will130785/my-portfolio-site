@@ -6,18 +6,30 @@ const state = {
     { name: 'ForFun', link: 'For Fun' },
     { name: 'Freelance', link: 'Freelance' },
     { name: 'Professional', link: 'Professional' }
-  ]
+  ],
+  sidebarOpen: false
 }
 
 const getters = {
   getLinks (state) {
     return state.navLinks
+  },
+  getSidebarStatus (state) {
+    return state.sidebarOpen
   }
 }
 
-const actions = {}
+const actions = {
+  sidebarStatusAction ({ commit }) {
+    commit('sidebarStatusMutation')
+  }
+}
 
-const mutations = {}
+const mutations = {
+  sidebarStatusMutation (state) {
+    state.sidebarOpen = !state.sidebarOpen
+  }
+}
 
 export default {
   state,
