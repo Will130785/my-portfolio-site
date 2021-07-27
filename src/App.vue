@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- Navbar to be displayed on every page -->
+    <!-- Navbar and SideBar to be displayed on every page -->
     <NavBar />
     <SideBar />
     <router-view />

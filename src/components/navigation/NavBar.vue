@@ -1,13 +1,10 @@
 <template>
   <nav class="navbar">
-    <div @click="toggleSidebar" class="toggle" :class="{ 'toggle-active': getSidebarStatus }">
+    <div class="toggle"
+      :class="{ 'toggle-active': getSidebarStatus }"
+      @click="toggleSidebar">
       <div></div>
     </div>
-    <ul v-for="(link, index) in getLinks" :key="index" class="navbar-links">
-      <li class="navbar-link">
-        <router-link :to="{ name: link.name }">{{ link.link }}</router-link>
-      </li>
-    </ul>
   </nav>
 </template>
 
@@ -15,7 +12,7 @@
 import { mapGetters, mapActions } from 'vuex'
 export default {
   computed: {
-    ...mapGetters(['getLinks', 'getSidebarStatus'])
+    ...mapGetters(['getSidebarStatus'])
   },
   methods: {
     ...mapActions(['sidebarStatusAction']),
@@ -27,6 +24,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// Main navbar
 .navbar {
   height: 5rem;
   background-color: orange;
@@ -34,10 +32,6 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  a {
-    color: #fff;
-  }
 }
 
 // Hamburger button
