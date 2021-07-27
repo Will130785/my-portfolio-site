@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import navigationStore from '../components/navigation/store'
 
 Vue.use(Vuex)
 
@@ -12,6 +13,9 @@ export function createStore () {
       increment (state) {
         state.counter++
       }
+    },
+    modules: {
+      navigationStore
     }
   })
 }
