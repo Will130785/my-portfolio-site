@@ -6,8 +6,6 @@ const { createBundleRenderer } = require('vue-server-renderer')
 const setupDevServer = require('./config/setup-dev-server')
 const app = express()
 
-// Set port
-const PORT = process.env.PORT
 // Check if production
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -77,6 +75,9 @@ app.get('*', isProd
   : (req, res) => {
       readyPromise.then(() => render(req, res))
     })
+
+// Set port
+const PORT = process.env.PORT
 
 // Start server
 app.listen(PORT, () => {
