@@ -4,11 +4,11 @@
     <NavBar />
     <SideBar />
     <!-- Main site content container -->
-    <main class="main">
+    <section class="main">
       <router-view />
       <!-- Footer -->
       <Footer />
-    </main>
+    </section>
   </div>
 </template>
 
