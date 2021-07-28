@@ -35,10 +35,12 @@ export default {
   width: 100%;
   height: 100%;
   background-color: orange;
-  position: absolute;
+  position: fixed;
+  top: 5rem;
   left: -100%;
   opacity: 0;
   transition: all .5s ease;
+  z-index: 1;
 
   @media only screen and (min-width: 800px) {
     width: 40%;

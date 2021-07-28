@@ -3,17 +3,24 @@
     <!-- Navbar and SideBar to be displayed on every page -->
     <NavBar />
     <SideBar />
-    <router-view />
+    <!-- Main site content container -->
+    <main class="main">
+      <router-view />
+      <!-- Footer -->
+      <Footer />
+    </main>
   </div>
 </template>
 
 <script>
 import NavBar from './components/navigation/NavBar.vue'
 import SideBar from './components/navigation/SideBar.vue'
+import Footer from './components/layout/Footer.vue'
 export default {
   components: {
     NavBar,
-    SideBar
+    SideBar,
+    Footer
   }
 }
 </script>
@@ -38,5 +45,11 @@ body {
 
 #app {
   height: 100%;
+}
+
+.main {
+  height: 100%;
+  position: relative;
+  top: 5rem;
 }
 </style>
