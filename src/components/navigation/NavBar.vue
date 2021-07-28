@@ -54,17 +54,21 @@ export default {
   height: .4rem;
   margin: .7rem 0;
   transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
 }
 
 .toggle-active::before {
   transform: translateY(1rem) rotate(135deg);
+  -webkit-transform: translateY(1rem) rotate(135deg);
 }
 
 .toggle-active::after {
   transform: translateY(-1.2rem) rotate(-135deg);
+  -webkit-transform: translateY(-1.2rem) rotate(-135deg);
 }
 
 .toggle-active div {
-  transform: scale(0)
+  transform: scale(0);
+  -webkit-transform: scale(0)
 }
 </style>
