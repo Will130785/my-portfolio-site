@@ -24,7 +24,10 @@ export default {
     BlogsHome
   },
   metaInfo: {
-    title: 'Home'
+    title: 'Will Constable | Home',
+    meta: [
+      { vmid: 'description', name: 'description', content: 'Portfolio website for Will Constable, software engineer and web developer.' }
+    ]
   }
 }
 </script>
