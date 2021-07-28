@@ -5,7 +5,7 @@ import Blogs from '../pages/Blogs.vue'
 import CurrentRole from '../pages/CurrentRole.vue'
 import ForFun from '../pages/ForFun.vue'
 import Freelance from '../pages/Freelance.vue'
-import Home from '../pages/Home.vue'
+import Home from '../pages/home/Home.vue'
 import Professional from '../pages/Professional.vue'
 import Project from '../pages/Project.vue'
 
