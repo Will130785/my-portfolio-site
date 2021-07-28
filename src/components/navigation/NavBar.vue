@@ -5,6 +5,7 @@
       @click="toggleSidebar">
       <div></div>
     </div>
+    <h2>Navbar</h2>
   </nav>
 </template>
 
@@ -35,6 +36,11 @@ export default {
   position: sticky;
   top: 0;
   z-index: 1;
+
+  h2 {
+    font-size: 3rem;
+    color: #fff;
+  }
 }
 
 // Hamburger button
