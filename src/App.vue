@@ -3,12 +3,10 @@
     <!-- Navbar and SideBar to be displayed on every page -->
     <NavBar />
     <SideBar />
-    <!-- Main site content container -->
-    <section class="main">
+    <!-- Main site content -->
       <router-view />
       <!-- Footer -->
       <Footer />
-    </section>
   </div>
 </template>
 
@@ -41,15 +39,5 @@ html {
 body {
   font-family:Arial, Helvetica, sans-serif;
   height: 100%;
-}
-
-#app {
-  height: 100%;
-}
-
-.main {
-  height: 100%;
-  position: relative;
-  top: 5rem;
 }
 </style>
