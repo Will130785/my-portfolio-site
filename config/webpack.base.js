@@ -48,14 +48,28 @@ module.exports = {
         use: isProd
           ? [MiniCssExtractPlugin.loader,
               'css-loader']
-          : ['vue-style-loader', 'css-loader']
+          : ['vue-style-loader', {
+            loader: 'css-loader',
+            options: { importLoaders: 1 }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  'autoprefixer'
+                ]
+              }
+            }
+          }]
       },
       {
         test: /\.scss$/,
         use: [
           'vue-style-loader',
           'css-loader',
-          'sass-loader'
+          'sass-loader',
+          'postcss-loader'
         ]
       }
     ]
@@ -70,7 +84,8 @@ module.exports = {
         new webpack.optimize.ModuleConcatenationPlugin(),
         new MiniCssExtractPlugin({
           filename: 'common.[chunkhash].css'
-        })
+        }),
+        require('autoprefixer')
       ]
     : [
         new VueLoaderPlugin()

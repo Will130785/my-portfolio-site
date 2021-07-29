@@ -32,7 +32,7 @@ export default {
 }
 
 html {
-  font-size: 62.5%; // 1rem === 10px
+  font-size: 62.5%;
   height: 100%;
 }
 
