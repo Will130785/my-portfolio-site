@@ -1,11 +1,12 @@
 const state = {
   navLinks: [
     { name: 'Home', link: 'Home' },
-    { name: 'Blogs', link: 'Blogs' },
+    { name: 'Professional', link: 'Professional' },
     { name: 'CurrentRole', link: 'Current Role' },
-    { name: 'ForFun', link: 'For Fun' },
     { name: 'Freelance', link: 'Freelance' },
-    { name: 'Professional', link: 'Professional' }
+    { name: 'ForFun', link: 'For Fun' },
+    { name: 'Blogs', link: 'Blogs' },
+    { name: 'Contact', link: 'Contact' }
   ],
   sidebarOpen: false
 }

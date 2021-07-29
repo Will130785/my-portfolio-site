@@ -8,6 +8,7 @@ import Freelance from '../pages/Freelance.vue'
 import Home from '../pages/home/Home.vue'
 import Professional from '../pages/Professional.vue'
 import Project from '../pages/Project.vue'
+import Contact from '../pages/Contact.vue'
 
 Vue.use(Router)
 
@@ -54,6 +55,11 @@ export function createRouter () {
         path: '/for-fun/:id',
         name: 'Project',
         component: Project
+      },
+      {
+        path: '/contact',
+        name: 'Contact',
+        component: Contact
       }
     ]
   })
