@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 import navigationStore from '../components/navigation/store'
 import homeStore from '../pages/home/store'
 import currentStore from '../pages/current/store'
+import freelanceStore from '../pages/freelance/store'
 
 Vue.use(Vuex)
 
@@ -19,7 +20,8 @@ export function createStore () {
     modules: {
       navigationStore,
       homeStore,
-      currentStore
+      currentStore,
+      freelanceStore
     }
   })
 }
