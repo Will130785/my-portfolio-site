@@ -14,15 +14,18 @@
 </template>
 
 <style scoped lang="scss">
+// Main hero for fun page
 .hero {
   min-height: 60rem;
   width: 100%;
   background-color: #000;
 
+  // ON desctop place top and bottom side by side
   @media only screen and (min-width: 750px) {
     display: flex;
   }
 
+  // Top section (mobile)
   &__top {
     width: 100%;
     height: 60rem;
@@ -36,6 +39,7 @@
     }
   }
 
+  // Bottom section (mobile)
   &__bottom {
     width: 100%;
     height: 60rem;
@@ -49,6 +53,7 @@
   }
 }
 
+// For layout purposes only - display title depending on mobile or desktop
 .header-top {
   display: block;
   color: #fff;

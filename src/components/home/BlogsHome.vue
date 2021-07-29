@@ -6,7 +6,7 @@
       <div class="blogs__blog"
         v-for="(blog, index) in getBlogs" 
         :key="index">
-          <p>{{ blog.name }}</p>
+          <router-link :to="'/blogs/' + blog.id">{{ blog.name }}</router-link>
       </div>
     </div>
   </section>
@@ -22,11 +22,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// Main home blogs
 .blogs {
   min-height: 60rem;
   width: 100%;
   background-color:cornflowerblue;
-
+  
+  // Blogs container
   &__container {
     width: 100%;
     padding: 2rem 1rem;
@@ -39,7 +41,8 @@ export default {
     height: 60rem;
   }
   }
-
+  
+  // Single blog
   &__blog {
     height: 30rem;
     width: 100%;
@@ -49,8 +52,10 @@ export default {
     align-items: center;
     margin: 1rem 0;
 
-    p {
+    a {
       font-size: 2rem;
+      color: #000;
+      text-decoration: none;
     }
 
     @media only screen and (min-width: 750px) {

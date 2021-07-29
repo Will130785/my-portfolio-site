@@ -6,7 +6,7 @@
       <div class="projects__project"
         v-for="(project, index) in getProjects" 
         :key="index">
-          <p>{{ project.name }}</p>
+          <router-link :to="'/for-fun/' + project.id">{{ project.name }}</router-link>
       </div>
     </div>
   </section>
@@ -22,11 +22,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// Main home projects
 .projects {
   min-height: 60rem;
   width: 100%;
   background-color: greenyellow;
-
+  
+  // home projects container
   &__container {
     width: 100%;
     padding: 2rem 1rem;
@@ -39,7 +41,8 @@ export default {
     height: 60rem;
   }
   }
-
+  
+  // Individual project
   &__project {
     height: 30rem;
     width: 100%;
@@ -49,8 +52,10 @@ export default {
     align-items: center;
     margin: 1rem 0;
 
-    p {
+    a {
       font-size: 2rem;
+      text-decoration: none;
+      color: #000;
     }
 
     @media only screen and (min-width: 750px) {

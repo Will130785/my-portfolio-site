@@ -5,6 +5,7 @@
 </template>
 
 <style scoped lang="scss">
+// Main freelance professional page
 .freelance {
   min-height: 60rem;
   width: 100%;

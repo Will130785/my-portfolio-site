@@ -5,6 +5,7 @@
 </template>
 
 <style scoped lang="scss">
+// Main hero Current role page
 .hero {
   min-height: 60rem;
   width: 100%;

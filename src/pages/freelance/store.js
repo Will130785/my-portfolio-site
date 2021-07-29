@@ -1,8 +1,8 @@
 const state = {
   work: [
-    { name: 'Work 1' },
-    { name: 'Work 2' },
-    { name: 'Work 3' }
+    { name: 'Work 1', id: 0 },
+    { name: 'Work 2', id: 1 },
+    { name: 'Work 3', id: 2 }
   ]
 }
 

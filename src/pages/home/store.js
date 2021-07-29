@@ -1,15 +1,15 @@
 const state = {
   // Template project data - will eventually come from api
   projects: [
-    { name: 'Project 1' },
-    { name: 'Project 2' },
-    { name: 'Project 3' }
+    { name: 'Project 1', id: 0 },
+    { name: 'Project 2', id: 1 },
+    { name: 'Project 3', id: 2 }
   ],
   // Template project data - will eventually come from api
   blogs: [
-    { name: 'Blog 1' },
-    { name: 'Blog 2' },
-    { name: 'Blog 3' }
+    { name: 'Blog 1', id: 0 },
+    { name: 'Blog 2', id: 1 },
+    { name: 'Blog 3', id: 2 }
   ]
 }
 

@@ -1,11 +1,11 @@
 <template>
   <section class="hero">
-    <h1>Hero Section</h1>
+    <h1>Head Section</h1>
   </section>
 </template>
 
 <style scoped lang="scss">
-// Main hero blogs page
+// Main project head
 .hero {
   min-height: 60rem;
   width: 100%;

@@ -22,11 +22,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// Main current work
 .current-work {
   min-height: 60rem;
   width: 100%;
   background-color:cornflowerblue;
 
+  // Projects container
   &__container {
     width: 100%;
     padding: 2rem 1rem;
@@ -39,7 +41,8 @@ export default {
     height: 60rem;
   }
   }
-
+  
+  // Individual project
   &__work {
     height: 30rem;
     width: 100%;

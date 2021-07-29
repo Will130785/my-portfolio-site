@@ -7,7 +7,7 @@ import ForFun from '../pages/forfun/ForFun.vue'
 import Freelance from '../pages/freelance/Freelance.vue'
 import Home from '../pages/home/Home.vue'
 import Professional from '../pages/Professional.vue'
-import Project from '../pages/Project.vue'
+import Project from '../pages/forfun/Project.vue'
 import Contact from '../pages/Contact.vue'
 
 Vue.use(Router)

@@ -1,11 +1,11 @@
 const state = {
   funProjects: [
-    { name: 'Project 1' },
-    { name: 'Project 2' },
-    { name: 'Project 3' },
-    { name: 'Project 4' },
-    { name: 'Project 5' },
-    { name: 'Project 6' }
+    { name: 'Project 1', id: 0 },
+    { name: 'Project 2', id: 1 },
+    { name: 'Project 3', id: 2 },
+    { name: 'Project 4', id: 3 },
+    { name: 'Project 5', id: 4 },
+    { name: 'Project 6', id: 5 }
   ]
 }
 

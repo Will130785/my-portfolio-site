@@ -5,6 +5,7 @@
 </template>
 
 <style scoped lang="scss">
+// Main professional
 .professional {
   width: 100%;
   min-height: 60rem;

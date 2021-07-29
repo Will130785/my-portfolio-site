@@ -5,6 +5,7 @@
 </template>
 
 <style scoped lang="scss">
+// Main experience professional page
 .experience {
   min-height: 60rem;
   width: 100%;

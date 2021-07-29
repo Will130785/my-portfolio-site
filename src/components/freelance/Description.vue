@@ -14,6 +14,7 @@
 </template>
 
 <style scoped lang="scss">
+// Main description
 .description {
   min-height: 60rem;
   width: 100%;
@@ -22,7 +23,8 @@
   @media only screen and (min-width: 750px) {
     display: flex;
   }
-
+  
+  // Top section (mobile)
   &__top {
     width: 100%;
     height: 60rem;
@@ -30,12 +32,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
+    // On desktop place top and bottom side by side
     @media only screen and (min-width: 750px) {
       width: 50%;
     }
   }
-
+  
+  // Bottom section (mobile)
   &__bottom {
     width: 100%;
     height: 60rem;
@@ -50,6 +54,7 @@
   }
 }
 
+// For layout purposes only - display title depending on mobile or desktop
 .header-top {
   display: block;
   color: #fff;

@@ -1,15 +1,15 @@
 <template>
-  <footer class="footer">
-    <h2>Footer</h2>
-  </footer>
+  <section class="blog-content">
+    <h2>Single blog content</h2>
+  </section>
 </template>
 
 <style scoped lang="scss">
-// Main footer
-.footer {
+// Main blog content
+.blog-content {
   width: 100%;
-  min-height: 30rem;
-  background-color: orange;
+  min-height: 70rem;
+  background-color:forestgreen;
   display: flex;
   justify-content: center;
   align-items: center;

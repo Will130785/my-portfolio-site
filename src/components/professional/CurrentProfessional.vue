@@ -5,6 +5,7 @@
 </template>
 
 <style scoped lang="scss">
+// Main current
 .current {
   min-height: 60rem;
   width: 100%;

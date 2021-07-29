@@ -22,11 +22,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// Main freelance
 .freelance-work {
   min-height: 60rem;
   width: 100%;
   background-color:cornflowerblue;
-
+  
+  // Freelance jobs container
   &__container {
     width: 100%;
     padding: 2rem 1rem;
@@ -40,6 +42,7 @@ export default {
   }
   }
 
+  // Individual job
   &__work {
     height: 30rem;
     width: 100%;

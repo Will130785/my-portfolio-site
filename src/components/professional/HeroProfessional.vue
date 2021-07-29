@@ -14,6 +14,7 @@
 </template>
 
 <style scoped lang="scss">
+// Main hero professional page
 .hero {
   min-height: 60rem;
   width: 100%;
