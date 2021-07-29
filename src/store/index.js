@@ -5,6 +5,7 @@ import homeStore from '../pages/home/store'
 import currentStore from '../pages/current/store'
 import freelanceStore from '../pages/freelance/store'
 import forFunStore from '../pages/forfun/store'
+import blogStore from '../pages/blogs/store'
 
 Vue.use(Vuex)
 
@@ -23,7 +24,8 @@ export function createStore () {
       homeStore,
       currentStore,
       freelanceStore,
-      forFunStore
+      forFunStore,
+      blogStore
     }
   })
 }
