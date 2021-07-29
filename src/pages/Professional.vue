@@ -26,7 +26,10 @@ export default {
     FreelanceProfessional
   },
   metaInfo: {
-    title: 'Professional'
+    title: 'Professional',
+    meta: [
+      { vmid: 'description', name: 'description', content: 'The professional main page of Will Constable\s portfolio website, a software engineer and web developer based in London' }
+    ]
   }
 }
 </script>

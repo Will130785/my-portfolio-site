@@ -19,6 +19,9 @@ export default {
     NavBar,
     SideBar,
     Footer
+  },
+  metaInfo: {
+    titleTemplate: 'Will Constable | %s'
   }
 }
 </script>

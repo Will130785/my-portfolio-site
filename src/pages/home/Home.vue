@@ -24,9 +24,9 @@ export default {
     BlogsHome
   },
   metaInfo: {
-    title: 'Will Constable | Home',
+    title: 'Home',
     meta: [
-      { vmid: 'description', name: 'description', content: 'Portfolio website for Will Constable, software engineer and web developer.' }
+      { vmid: 'description', name: 'description', content: 'Portfolio website for Will Constable, software engineer and web developer based in London.' }
     ]
   }
 }
