@@ -7,7 +7,7 @@ const state = {
 }
 
 const getters = {
-  getWork (state) {
+  getWorkCurrent (state) {
     return state.work
   }
 }

@@ -1,12 +1,12 @@
 <template>
-  <section class="freelance-work">
+  <section class="for-fun">
     <!-- Projects container -->
-    <div class="freelance-work__container">
+    <div class="for-fun__container">
       <!-- Individual Projects -->
-      <div class="freelance-work__work"
-        v-for="(work, index) in getWorkFreelance" 
+      <div class="for-fun__project"
+        v-for="(project, index) in getFunProjects" 
         :key="index">
-          <p>{{ work.name }}</p>
+          <p>{{ project.name }}</p>
       </div>
     </div>
   </section>
@@ -16,13 +16,13 @@
 import { mapGetters } from 'vuex'
 export default {
   computed: {
-    ...mapGetters(['getWorkFreelance'])
+    ...mapGetters(['getFunProjects'])
   }
 }
 </script>
 
 <style scoped lang="scss">
-.freelance-work {
+.for-fun {
   min-height: 60rem;
   width: 100%;
   background-color:cornflowerblue;
@@ -33,14 +33,14 @@ export default {
     
 
     @media only screen and (min-width: 750px) {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 60rem;
+    justify-items: center;
   }
   }
 
-  &__work {
+  &__project {
     height: 30rem;
     width: 100%;
     background-color: #fff;

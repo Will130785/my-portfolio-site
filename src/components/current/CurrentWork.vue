@@ -4,7 +4,7 @@
     <div class="current-work__container">
       <!-- Individual Projects -->
       <div class="current-work__work"
-        v-for="(work, index) in getWork" 
+        v-for="(work, index) in getWorkCurrent" 
         :key="index">
           <p>{{ work.name }}</p>
       </div>
@@ -16,7 +16,7 @@
 import { mapGetters } from 'vuex'
 export default {
   computed: {
-    ...mapGetters(['getWork'])
+    ...mapGetters(['getWorkCurrent'])
   }
 }
 </script>
