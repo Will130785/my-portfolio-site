@@ -26,7 +26,8 @@ export default {
 .projects {
   min-height: 60rem;
   width: 100%;
-  background-color: greenyellow;
+  border: 1px solid #000;
+  background-color: #fff;
   
   // home projects container
   &__container {
@@ -46,6 +47,7 @@ export default {
   &__project {
     height: 30rem;
     width: 100%;
+    border: 1px solid #000;
     background-color: #fff;
     display: flex;
     justify-content: center;

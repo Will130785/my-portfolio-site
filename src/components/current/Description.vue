@@ -29,7 +29,8 @@
   &__top {
     width: 100%;
     height: 60rem;
-    background-color:lightcoral;
+    border: 1px solid #000;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +48,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgreen;
+    border: 1px solid #000;
+    background-color: #fff;
     
     // take up 50% on desktop
     @media only screen and (min-width: 750px) {
@@ -58,7 +60,7 @@
 
 .header-top {
   display: block;
-  color: #fff;
+  color: #000;
   font-size: 3rem;
 
   @media only screen and (min-width: 750px) {
@@ -69,7 +71,7 @@
 // Just for layout purposes - switch titles depending on mobile or desktop
 .header-left {
   display: none;
-  color: #fff;
+  color: #000;
   font-size: 3rem;
 
   @media only screen and (min-width: 750px) {
@@ -79,7 +81,7 @@
 
 .header-bottom {
   display: block;
-  color: #fff;
+  color: #000;
   font-size: 3rem;
 
   @media only screen and (min-width: 750px) {
@@ -89,7 +91,7 @@
 
 .header-right {
   display: none;
-  color: #fff;
+  color: #000;
   font-size: 3rem;
 
   @media only screen and (min-width: 750px) {

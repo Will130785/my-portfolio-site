@@ -9,13 +9,14 @@
 .hero {
   min-height: 60rem;
   width: 100%;
-  background-color: #000;
+  border: 1px solid #000;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 
   h1 {
-    color: #fff;
+    color: #000;
     font-size: 3rem;
   }
 }

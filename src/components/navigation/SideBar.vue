@@ -34,7 +34,8 @@ export default {
 .sidebar {
   width: 100%;
   height: 100%;
-  background-color: orange;
+  border: 1px solid #000;
+  background-color: #fff;
   position: fixed;
   top: 5rem;
   left: -100%;
@@ -66,7 +67,7 @@ export default {
       a {
         display: block;
         width: 100%;
-        color: #fff;
+        color: #000;
         text-decoration: none;
         font-size: 1.6rem;
       }

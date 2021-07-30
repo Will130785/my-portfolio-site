@@ -18,7 +18,8 @@
 .hero {
   min-height: 60rem;
   width: 100%;
-  background-color: #000;
+  border: 1px solid #000;
+  background-color: #fff;
 
   @media only screen and (min-width: 750px) {
     display: flex;
@@ -27,7 +28,8 @@
   &__top {
     width: 100%;
     height: 60rem;
-    background-color: yellow;
+    border: 1px solid #000;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +54,7 @@
 
 .header-top {
   display: block;
-  color: #fff;
+  color: #000;
   font-size: 3rem;
 
   @media only screen and (min-width: 750px) {
@@ -62,7 +64,7 @@
 
 .header-left {
   display: none;
-  color: #fff;
+  color: #000;
   font-size: 3rem;
 
   @media only screen and (min-width: 750px) {
@@ -72,7 +74,7 @@
 
 .header-bottom {
   display: block;
-  color: #fff;
+  color: #000;
   font-size: 3rem;
 
   @media only screen and (min-width: 750px) {
@@ -82,7 +84,7 @@
 
 .header-right {
   display: none;
-  color: #fff;
+  color: #000;
   font-size: 3rem;
 
   @media only screen and (min-width: 750px) {

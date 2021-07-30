@@ -18,14 +18,15 @@ export default {
 <style scoped lang="scss">
 .contact {
   min-height: 80rem;
-  background-color: dodgerblue;
+  border: 1px solid #000;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   
   h1 {
     font-size: 3rem;
-    color: #fff;
+    color: #000;
   }
 }
 </style>

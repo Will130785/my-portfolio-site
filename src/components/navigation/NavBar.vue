@@ -28,7 +28,8 @@ export default {
 // Main navbar
 .navbar {
   height: 5rem;
-  background-color: orange;
+  border: 1px solid #000;
+  background-color: #fff;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -39,7 +40,7 @@ export default {
 
   h2 {
     font-size: 3rem;
-    color: #fff;
+    color: #000;
   }
 }
 
@@ -53,7 +54,7 @@ export default {
 .toggle::after,
 .toggle::before,
 .toggle div {
-  background-color: #fff;
+  background-color: #000;
   border-radius: .3rem;
   content: '';
   display: block;

@@ -1,9 +1,14 @@
+// This is just a test
 import apiClient from './api'
 
-const testCall = () => {
-  return apiClient().get('/')
-}
+const { VUE_APP_API_BASE } = process.env
 
 export default {
-  testCall
+  async getTest () {
+    // return apiClient().get(`${VUE_APP_API_BASE}`)
+    const res = await apiClient().get(`${VUE_APP_API_BASE}`)
+    if (res && res.data) {
+      return res.data
+    }
+  } 
 }
