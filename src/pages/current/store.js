@@ -1,8 +1,10 @@
+import CurrentService from "../../services/CurrentService"
+
 const state = {
   work: [
-    { name: 'Work 1', id: 0 },
-    { name: 'Work 2', id: 1 },
-    { name: 'Work 3', id: 2 }
+    { title: 'Work 1', id: 0 },
+    { title: 'Work 2', id: 1 },
+    { title: 'Work 3', id: 2 }
   ]
 }
 
@@ -12,9 +14,18 @@ const getters = {
   }
 }
 
-const actions = {}
+const actions = {
+  async setCurrentAction ({ commit }) {
+    const res = await CurrentService.getCurrent()
+    commit('setCurrentMutation', res.data)
+  }
+}
 
-const mutations = {}
+const mutations = {
+  setCurrentMutation (state, payload) {
+    state.work = payload
+  }
+}
 
 export default {
   state,

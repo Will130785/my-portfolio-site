@@ -14,6 +14,7 @@
 import NavBar from './components/navigation/NavBar.vue'
 import SideBar from './components/navigation/SideBar.vue'
 import Footer from './components/layout/Footer.vue'
+import { mapActions } from 'vuex'
 export default {
   components: {
     NavBar,
@@ -22,6 +23,21 @@ export default {
   },
   metaInfo: {
     titleTemplate: 'Will Constable | %s'
+  },
+  mounted () {
+    // Populate vuex store with data
+    this.setBlogsAction()
+    this.setCurrentAction()
+    this.setFreelanceAction()
+    this.setProjectAction()
+  },
+  methods: {
+    ...mapActions([
+      'setBlogsAction',
+      'setCurrentAction',
+      'setFreelanceAction',
+      'setProjectAction'
+    ])
   }
 }
 </script>

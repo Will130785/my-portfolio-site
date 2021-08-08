@@ -1,11 +1,13 @@
+import ProjectService from "../../services/ProjectService"
+
 const state = {
   funProjects: [
-    { name: 'Project 1', id: 0 },
-    { name: 'Project 2', id: 1 },
-    { name: 'Project 3', id: 2 },
-    { name: 'Project 4', id: 3 },
-    { name: 'Project 5', id: 4 },
-    { name: 'Project 6', id: 5 }
+    { title: 'Project 1', id: 0 },
+    { title: 'Project 2', id: 1 },
+    { title: 'Project 3', id: 2 },
+    { title: 'Project 4', id: 3 },
+    { title: 'Project 5', id: 4 },
+    { title: 'Project 6', id: 5 }
   ]
 }
 
@@ -15,9 +17,18 @@ const getters = {
   }
 }
 
-const actions = {}
+const actions = {
+  async setProjectAction ({ commit }) {
+    const res = await ProjectService.getProjects()
+    commit('setProjectMutation', res.data)
+  }
+}
 
-const mutations = {}
+const mutations = {
+  setProjectMutation (state, payload) {
+    state.funProjects = payload
+  }
+}
 
 export default {
   state,

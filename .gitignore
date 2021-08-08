@@ -5,4 +5,3 @@ dist
 .env
 .env.development
 development.env.js
-production.env.js

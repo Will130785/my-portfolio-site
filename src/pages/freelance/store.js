@@ -1,8 +1,10 @@
+import FreelanceService from '../../services/FreelanceService'
+
 const state = {
   work: [
-    { name: 'Work 1', id: 0 },
-    { name: 'Work 2', id: 1 },
-    { name: 'Work 3', id: 2 }
+    { title: 'Work 1', id: 0 },
+    { title: 'Work 2', id: 1 },
+    { title: 'Work 3', id: 2 }
   ]
 }
 
@@ -12,9 +14,18 @@ const getters = {
   }
 }
 
-const actions = {}
+const actions = {
+  async setFreelanceAction ({ commit }) {
+    const res = await FreelanceService.getFreelance()
+    commit('setFreelanceMutation', res.data)
+  }
+}
 
-const mutations = {}
+const mutations = {
+  setFreelanceMutation (state, payload) {
+    state.work = payload
+  }
+}
 
 export default {
   state,

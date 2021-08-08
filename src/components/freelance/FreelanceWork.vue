@@ -6,7 +6,7 @@
       <div class="freelance-work__work"
         v-for="(work, index) in getWorkFreelance" 
         :key="index">
-          <p>{{ work.name }}</p>
+          <p>{{ work.title }}</p>
       </div>
     </div>
   </section>

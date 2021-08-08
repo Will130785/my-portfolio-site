@@ -6,7 +6,7 @@
       <div class="for-fun__project"
         v-for="(project, index) in getFunProjects" 
         :key="index">
-          <router-link :to="'/for-fun/' + project.id">{{ project.name }}</router-link>
+          <router-link :to="'/for-fun/' + project._id">{{ project.title }}</router-link>
       </div>
     </div>
   </section>

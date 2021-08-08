@@ -1,3 +1,6 @@
+import BlogsService from '../../services/BlogsService'
+import getBlogs from '../../services/BlogsService'
+
 const state = {
   blogs: [
     { name: 'Blog 1', id: 0 },
@@ -15,9 +18,18 @@ const getters = {
   }
 }
 
-const actions = {}
+const actions = {
+  async setBlogsAction ({ commit }) {
+    const res = await BlogsService.getBlogs()
+    commit('setBlogsMutation', res.data)
+  }
+}
 
-const mutations = {}
+const mutations = {
+  setBlogsMutation (state, payload) {
+    state.blogs = payload
+  }
+}
 
 export default {
   state,

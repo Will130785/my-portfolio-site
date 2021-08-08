@@ -6,7 +6,7 @@
       <div class="blogs__blog"
         v-for="(blog, index) in getBlogPageBlogs" 
         :key="index">
-          <router-link :to="'/blogs/' + blog.id">{{ blog.name }}</router-link>
+          <router-link :to="'/blogs/' + blog._id">{{ blog.title}}</router-link>
       </div>
     </div>
   </section>

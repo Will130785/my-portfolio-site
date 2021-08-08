@@ -1,9 +1,9 @@
 import axios from 'axios'
-// console.log(process.env)
+const { VUE_APP_API_BASE } = process.env
 
 export default () => {
   return axios.create({
-    baseUrl: 'http://localhost:3000',
+    baseURL: `${VUE_APP_API_BASE}`,
     withCredentials: false,
     headers: {
       Accept: 'application/json',

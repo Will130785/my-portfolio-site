@@ -6,7 +6,7 @@
       <div class="current-work__work"
         v-for="(work, index) in getWorkCurrent" 
         :key="index">
-          <p>{{ work.name }}</p>
+          <p>{{ work.title }}</p>
       </div>
     </div>
   </section>

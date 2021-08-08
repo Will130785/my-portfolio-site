@@ -4,9 +4,9 @@
     <div class="projects__container">
       <!-- Individual Projects -->
       <div class="projects__project"
-        v-for="(project, index) in getProjects" 
+        v-for="(project, index) in firstThreeProjects" 
         :key="index">
-          <router-link :to="'/for-fun/' + project.id">{{ project.name }}</router-link>
+          <router-link :to="'/for-fun/' + project._id">{{ project.title }}</router-link>
       </div>
     </div>
   </section>
@@ -16,7 +16,15 @@
 import { mapGetters } from 'vuex'
 export default {
   computed: {
-    ...mapGetters(['getProjects'])
+    ...mapGetters(['getFunProjects']),
+    firstThreeProjects () {
+      const firstThree = []
+      for (let i = 0; i <= 2; i++) {
+        firstThree.push(this.getFunProjects[i])
+      }
+
+      return firstThree
+    }
   }
 }
 </script>
