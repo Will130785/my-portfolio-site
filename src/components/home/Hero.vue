@@ -9,7 +9,6 @@
 .hero {
   min-height: 60rem;
   width: 100%;
-  border: 1px solid #000;
   background-color: #fff;
   display: flex;
   justify-content: center;

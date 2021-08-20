@@ -34,8 +34,7 @@ export default {
 .sidebar {
   width: 100%;
   height: 100%;
-  border: 1px solid #000;
-  background-color: #fff;
+  background-color: #CB0000;
   position: fixed;
   top: 5rem;
   left: -100%;
@@ -56,6 +55,7 @@ export default {
     align-items: center;
     height: 100%;
     list-style: none;
+    padding-top: 3rem;
     padding-bottom: 10rem;
 
       // Individual links
@@ -67,7 +67,7 @@ export default {
       a {
         display: block;
         width: 100%;
-        color: #000;
+        color: #fff;
         text-decoration: none;
         font-size: 1.6rem;
       }

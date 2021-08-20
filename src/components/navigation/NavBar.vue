@@ -5,13 +5,20 @@
       @click="toggleSidebar">
       <div></div>
     </div>
+    <div class="search-container">
+      <Search />
+    </div>
     <h2>Navbar</h2>
   </nav>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
+import Search from '../../components/inputs/Search.vue'
 export default {
+  components: {
+    Search
+  },
   computed: {
     ...mapGetters(['getSidebarStatus'])
   },
@@ -27,20 +34,19 @@ export default {
 <style scoped lang="scss">
 // Main navbar
 .navbar {
-  height: 5rem;
-  border: 1px solid #000;
-  background-color: #fff;
+  height: 8rem;
+  background-color: #CB0000;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 
   h2 {
     font-size: 3rem;
-    color: #000;
+    color: #fff;
   }
 }
 
@@ -54,7 +60,7 @@ export default {
 .toggle::after,
 .toggle::before,
 .toggle div {
-  background-color: #000;
+  background-color: #fff;
   border-radius: .3rem;
   content: '';
   display: block;
@@ -77,5 +83,9 @@ export default {
 .toggle-active div {
   transform: scale(0);
   -webkit-transform: scale(0)
+}
+
+.search-container {
+  width: 40%;
 }
 </style>
