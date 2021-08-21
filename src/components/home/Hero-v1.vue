@@ -1,11 +1,17 @@
 <template>
-  <section class="hero">
+  <section :style="{ backgroundImage: 'url(' + image + ')' }" class="hero">
     <h1>Hero Section</h1>
   </section>
 </template>
 
 <script>
+import image from '../../assets/Web-Header-Background.svg'
 export default {
+  data () {
+    return {
+      image: image
+    }
+  },
   mounted () {
     console.log(this.image)
   }
@@ -20,7 +26,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000;
 
   h1 {
     color: #000;

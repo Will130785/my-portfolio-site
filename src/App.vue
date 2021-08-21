@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import NavBar from './components/navigation/NavBar.vue'
-import SideBar from './components/navigation/SideBar.vue'
+import NavBar from './components/navigation/NavBar-v1.vue'
+import SideBar from './components/navigation/SideBar-v1.vue'
 import Footer from './components/layout/Footer.vue'
 import { mapActions } from 'vuex'
 export default {
