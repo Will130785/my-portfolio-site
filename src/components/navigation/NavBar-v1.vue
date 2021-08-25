@@ -8,7 +8,7 @@
     <div class="search-container">
       <Search />
     </div>
-    <h2>Navbar</h2>
+    <h2>WC</h2>
   </nav>
 </template>
 
@@ -86,6 +86,11 @@ export default {
 }
 
 .search-container {
+  display: none;
   width: 40%;
+
+  @media only screen and (min-width: 992px) {
+    display: block;
+  }
 }
 </style>

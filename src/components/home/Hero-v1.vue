@@ -1,6 +1,18 @@
 <template>
   <section :style="{ backgroundImage: 'url(' + image + ')' }" class="hero">
-    <h1>Hero Section</h1>
+    <!-- Title -->
+    <div class="hero__title">
+      <h1>Will Constable</h1>
+    </div>
+    <!-- Description -->
+    <div class="hero__desc">
+      <p>Software engineer based in London</p>
+    </div>
+    <!-- Get in contact -->
+    <div class="hero__contact">
+      <input type="text" placeholder="Enter your email address" />
+      <button>Contact me</button>
+    </div>
   </section>
 </template>
 
@@ -24,12 +36,54 @@ export default {
   min-height: 60rem;
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 
+  &__title {
+    margin-top: 10rem;
+  }
+
   h1 {
-    color: #000;
+    color: #fff;
     font-size: 3rem;
+  }
+
+  p {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    width: 100%;
+
+    input {
+      border: none;
+      padding: 2rem;
+      border-top-left-radius: .5rem;
+      border-bottom-left-radius: .5rem;
+      width: 60%;
+
+      @media only screen and (min-width: 992px) {
+        width: 40%;
+      }
+    }
+
+    button {
+      border: none;
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+      width: 30%;
+      background-color: #3F6C45;
+      color: #fff;
+      cursor: pointer;
+
+      @media only screen and (min-width: 992px) {
+        width: 10%;
+      }
+    }
   }
 }
 </style>
