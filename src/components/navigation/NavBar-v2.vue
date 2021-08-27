@@ -56,7 +56,7 @@ export default {
 .toggle::after,
 .toggle::before,
 .toggle div {
-  background-color: #4d85bd;
+  background-color: #0058a3;
   border-radius: .3rem;
   content: '';
   display: block;

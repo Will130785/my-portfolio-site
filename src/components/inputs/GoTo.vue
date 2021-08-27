@@ -25,8 +25,8 @@ export default {
   display: flex;
   
   button {
-    border: 1px solid #4d85bd;
-    background-color: #4d85bd;
+    border: 1px solid #0058a3;
+    background-color: #0058a3;
     padding: 3rem 4rem;
     margin: 0;
     border-top-left-radius: 10rem;

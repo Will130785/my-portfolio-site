@@ -34,7 +34,7 @@ export default {
 
   h1 {
     margin-top: 5rem;
-    color: #4d85bd;
+    color: #0058a3;
     font-size: 5rem;
     font-family: 'Alfa Slab One', cursive;
     text-align: center;
