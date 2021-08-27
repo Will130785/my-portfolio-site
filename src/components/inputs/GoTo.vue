@@ -25,8 +25,8 @@ export default {
   display: flex;
   
   button {
-    border: 1px solid #F70025;
-    background-color: #F70025;
+    border: 1px solid #4d85bd;
+    background-color: #4d85bd;
     padding: 3rem 4rem;
     margin: 0;
     border-top-left-radius: 10rem;
@@ -39,7 +39,7 @@ export default {
     padding: 3rem;
     margin: 0;
     width: 25rem;
-    background-color: #f8516a;
+    background-color: #7c99b6;
     color: #fff;
     border-top-right-radius: 10rem;
     border-bottom-right-radius: 10rem;
