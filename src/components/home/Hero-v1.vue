@@ -7,6 +7,7 @@
     <!-- Description -->
     <div class="hero__desc">
       <p>Software engineer based in London</p>
+      <p>Got something you want to have a chat about? enter your email address below and I will get back to you ASAP</p>
     </div>
     <!-- Get in contact -->
     <div class="hero__contact">
@@ -51,6 +52,10 @@ export default {
   p {
     color: #fff;
     font-size: 2rem;
+  }
+
+  &__desc {
+    text-align: center;
   }
 
   &__contact {

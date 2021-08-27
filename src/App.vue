@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import NavBar from './components/navigation/NavBar-v1.vue'
-import SideBar from './components/navigation/SideBar-v1.vue'
+import NavBar from './components/navigation/NavBar-v2.vue'
+import SideBar from './components/navigation/SideBar-v2.vue'
 import Footer from './components/layout/Footer.vue'
 import { mapActions } from 'vuex'
 export default {
@@ -43,6 +43,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 // Global reset
 * {
   padding: 0;
