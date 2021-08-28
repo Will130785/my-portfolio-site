@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Hero from '../../components/home/Hero-v2.vue'
+import Hero from '../../components/home/Hero-v3.vue'
 import ProjectsHome from '../../components/home/ProjectsHome.vue'
 import ProfessionalHome from '../../components/home/ProfessionalHome.vue'
 import BlogsHome from '../../components/home/BlogsHome.vue'
@@ -34,15 +34,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.home {
-  margin: 0 2rem;
 
-  @media only screen and (min-width: 700px) {
-    margin: 0 4rem
-  }
-
-  @media only screen and (min-width: 992px) {
-    margin: 0 6rem;
-  }
-}
 </style>

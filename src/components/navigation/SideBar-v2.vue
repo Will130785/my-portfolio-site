@@ -34,7 +34,7 @@ export default {
 .sidebar {
   width: 100%;
   height: 100%;
-  background-color: #ffdb5c;
+  background-color: #B8D20B;
   position: fixed;
   top: 5rem;
   left: -100%;

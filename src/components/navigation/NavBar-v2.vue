@@ -56,7 +56,7 @@ export default {
 .toggle::after,
 .toggle::before,
 .toggle div {
-  background-color: #0058a3;
+  background-color: #000;
   border-radius: .3rem;
   content: '';
   display: block;
@@ -88,6 +88,6 @@ export default {
 }
 
 .sidebar-open {
-  background-color: #ffdb5c;
+  background-color: #B8D20B;
 }
 </style>
