@@ -44,6 +44,7 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 // Global reset
 * {
   padding: 0;
@@ -57,7 +58,7 @@ html {
 }
 
 body {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   height: 100%;
 }
 </style>

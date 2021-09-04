@@ -88,6 +88,6 @@ export default {
 }
 
 .sidebar-open {
-  background-color: #B8D20B;
+  background-color: #CB0000;
 }
 </style>

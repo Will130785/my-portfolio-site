@@ -2,14 +2,22 @@
   <section class="hero">
     <!-- Info -->
     <div class="hero__info">
+      <!-- Heading -->
       <div class="hero__info--heading">
         <h1><span class="myname">Will Constable</span>, a software engineer <span class="based">based</span> in London</h1>
       </div>
-      <font-awesome-icon :icon="['fab', 'vuejs']" />
-      <font-awesome-icon :icon="['fab', 'js-square']" />
-      <font-awesome-icon :icon="['fab', 'node-js']" />
-      <font-awesome-icon :icon="['fab', 'html5']" />
-      <font-awesome-icon :icon="['fab', 'css3-alt']" />
+      <!-- Call to action -->
+      <div class="hero__info--cta">
+        <Button text="Let's get started" btnClass="cta-btn"/>
+      </div>
+      <!-- Logos -->
+      <div class="hero__info--logos">
+        <font-awesome-icon :icon="['fab', 'vuejs']" />
+        <font-awesome-icon :icon="['fab', 'js-square']" />
+        <font-awesome-icon :icon="['fab', 'node-js']" />
+        <font-awesome-icon :icon="['fab', 'html5']" />
+        <font-awesome-icon :icon="['fab', 'css3-alt']" />
+      </div>
     </div>
     <!-- Image -->
     <figure class="hero__image">
@@ -19,8 +27,12 @@
 </template>
 
 <script>
-import image from '../../assets/Mathematics-bro2.svg'
+import image from '../../assets/Mathematics-bro3.svg'
+import Button from '../../components/buttons/Button.vue'
 export default {
+  components: {
+    Button
+  },
   data () {
     return {
       image: image
@@ -40,24 +52,44 @@ export default {
   &__info {
     width: 100%;
     padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 700px) {
       width: 50%;
     }
 
     &--heading {
       width: 70%;
 
-      @media only screen and (min-width: 992px) {
+      @media only screen and (min-width: 700px) {
         width: 100%;
       }
+
+      @media only screen and (min-width: 1300px) {
+        width: 80%;
+      }
+      
+    }
+
+    &--cta {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &--logos {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
     }
   }
 
   &__image {
     display: none;
 
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 700px) {
       display: block;
       width: 50%;
     }
@@ -81,12 +113,12 @@ export default {
 
 .myname {
       display: inline-block;
-      border-bottom: 4px solid #B8D20B;
+      border-bottom: 4px solid #CB0000;
     }
 
 .based {
       display: inline-block;
-      background-color: #B8D20B;
+      background-color: #CB0000;
     }
 
 .svg-inline--fa {
