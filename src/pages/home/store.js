@@ -9,7 +9,7 @@ const state = {
   blogs: [
     { name: 'Blog 1', id: 0 },
     { name: 'Blog 2', id: 1 },
-    { name: 'Blog 3', id: 2 }
+    { name: 'Blog 4', id: 2 }
   ]
 }
 

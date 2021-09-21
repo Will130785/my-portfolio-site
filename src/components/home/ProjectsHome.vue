@@ -4,9 +4,11 @@
     <div class="projects__container">
       <!-- Individual Projects -->
       <div class="projects__project"
-        v-for="(project, index) in firstThreeProjects" 
+        v-for="(project, index) in getFunProjects" 
         :key="index">
-          <router-link :to="'/for-fun/' + project._id">{{ project.title }}</router-link>
+          <router-link :to="'/for-fun/' + project._id">
+            <img :src="project.image" :alt="project.title" />
+          </router-link>
       </div>
     </div>
   </section>
@@ -17,14 +19,14 @@ import { mapGetters } from 'vuex'
 export default {
   computed: {
     ...mapGetters(['getFunProjects']),
-    firstThreeProjects () {
-      const firstThree = []
-      for (let i = 0; i <= 2; i++) {
-        firstThree.push(this.getFunProjects[i])
-      }
+    // firstThreeProjects () {
+    //   const firstThree = []
+    //   for (let i = 0; i <= 2; i++) {
+    //     firstThree.push(this.getFunProjects[i])
+    //   }
 
-      return firstThree
-    }
+    //   return firstThree
+    // }
   }
 }
 </script>
@@ -62,10 +64,16 @@ export default {
     align-items: center;
     margin: 1rem 0;
 
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
     a {
       font-size: 2rem;
       text-decoration: none;
       color: #000;
+      display: inline-block;
     }
 
     @media only screen and (min-width: 750px) {

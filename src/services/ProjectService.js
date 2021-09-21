@@ -11,6 +11,18 @@ const getProjects = async () => {
   }
 }
 
+const getProject = async (id) => {
+  try {
+    const res = await apiClient().get(`/website/projects/${id}`)
+    if (res && res.data) {
+      return res
+    }
+  } catch (err) {
+    console.log(err)
+  }
+}
+
 export default {
-  getProjects
+  getProjects,
+  getProject
 }

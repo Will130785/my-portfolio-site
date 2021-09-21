@@ -6,7 +6,9 @@
       <div class="for-fun__project"
         v-for="(project, index) in getFunProjects" 
         :key="index">
-          <router-link :to="'/for-fun/' + project._id">{{ project.title }}</router-link>
+          <router-link :to="'/for-fun/' + project._id">
+            <img :src="project.image" :alt="project.title" />
+          </router-link>
       </div>
     </div>
   </section>
@@ -53,6 +55,10 @@ export default {
     justify-content: center;
     align-items: center;
     margin: 1rem 0;
+
+    img {
+      width: 100%;
+    }
 
     a {
       font-size: 2rem;
