@@ -19,14 +19,14 @@ import { mapGetters } from 'vuex'
 export default {
   computed: {
     ...mapGetters(['getFunProjects']),
-    // firstThreeProjects () {
-    //   const firstThree = []
-    //   for (let i = 0; i <= 2; i++) {
-    //     firstThree.push(this.getFunProjects[i])
-    //   }
+    firstThreeProjects () {
+      const firstThree = []
+      for (let i = 0; i <= 2; i++) {
+        firstThree.push(this.getFunProjects[i])
+      }
 
-    //   return firstThree
-    // }
+      return firstThree
+    }
   }
 }
 </script>
