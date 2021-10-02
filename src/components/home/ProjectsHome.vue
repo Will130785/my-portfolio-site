@@ -6,15 +6,21 @@
       <div class="projects__project"
         v-for="(project, index) in getFunProjects" 
         :key="index">
+          <!-- image -->
           <router-link :to="'/for-fun/' + project._id">
-            <img :src="project.image" :alt="project.title" />
+            <img :src="image" :alt="project.projectTitle" />
           </router-link>
+          <!-- Text -->
+          <div>
+            <h2>{{ project.projectTitle }}</h2>
+          </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import image from '../../assets/project.svg'
 import { mapGetters } from 'vuex'
 export default {
   computed: {
@@ -27,6 +33,11 @@ export default {
 
       return firstThree
     }
+  },
+  data () {
+    return {
+      image: image
+    }
   }
 }
 </script>
@@ -36,7 +47,6 @@ export default {
 .projects {
   min-height: 60rem;
   width: 100%;
-  border: 1px solid #000;
   background-color: #fff;
   
   // home projects container
@@ -57,23 +67,24 @@ export default {
   &__project {
     height: 30rem;
     width: 100%;
-    border: 1px solid #000;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.21);
     background-color: #fff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     margin: 1rem 0;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
 
     a {
       font-size: 2rem;
       text-decoration: none;
       color: #000;
       display: inline-block;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
     }
 
     @media only screen and (min-width: 750px) {
