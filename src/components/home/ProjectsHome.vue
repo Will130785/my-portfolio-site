@@ -73,7 +73,11 @@ export default {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 1rem 0;
+    margin: 4rem 0;
+
+    @media only screen and (min-width: 750px) {
+      margin: 1rem 2rem;
+    }
 
     a {
       font-size: 2rem;
